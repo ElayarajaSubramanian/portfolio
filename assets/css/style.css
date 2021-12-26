@@ -17,7 +17,7 @@
 }
 
 .material-icons-outlined {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -36,17 +36,25 @@
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
+          font-feature-settings: "liga";
 }
 
-body, input, button {
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input, textarea, button {
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   overflow-x: hidden;
   background-color: var(--gray-clr);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .hr-line {
@@ -65,13 +73,13 @@ body {
 .green-circle {
   position: absolute;
   right: -8rem;
-  top: 123rem;
+  top: 75rem;
 }
 
 .yellow-circle {
   position: absolute;
   left: -8rem;
-  top: 155rem;
+  top: 105rem;
 }
 
 .container {
@@ -106,16 +114,16 @@ body {
           align-items: center;
 }
 
-.header__btn, .intro__btn, .worktogether__btn {
+.header__btn, .intro__btn, .form__btn, .worktogether__btn, .visitgithub__btn {
   background-color: var(--yellow-clr);
-  padding: 0.60rem 1.5rem;
-  border-radius: 0.70rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.7rem;
   text-decoration: none;
   color: var(--black-clr);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
-.header__btn:hover, .intro__btn:hover, .worktogether__btn:hover {
+.header__btn:hover, .intro__btn:hover, .form__btn:hover, .worktogether__btn:hover, .visitgithub__btn:hover {
   background-color: var(--darkyellow-clr);
 }
 
@@ -123,8 +131,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 1.50rem;
-          column-gap: 1.50rem;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
 }
 
 .nav__li {
@@ -133,8 +141,8 @@ body {
 
 .nav__anchor {
   text-decoration: none;
-  font-size: 0.90rem;
-  padding-bottom: 0.10rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.1rem;
   color: var(--white-clr);
 }
 
@@ -173,13 +181,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 0.50rem;
-          column-gap: 0.50rem;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
 }
 
 .intro__txt, .hireme__txt, .project__txt {
   color: var(--green-clr);
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -196,10 +204,10 @@ body {
 
 .intro__para {
   color: var(--white-clr);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
-.intro__btn {
+.intro__btn, .form__btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -266,7 +274,7 @@ body {
 
 .designs__txt {
   color: var(--light-clr);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
 .designs__box:nth-child(odd) {
@@ -298,7 +306,7 @@ body {
 
 .hireme__para, .project__para {
   color: var(--light-clr);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
 .projects {
@@ -322,7 +330,7 @@ body {
 .project__anchor {
   color: var(--yellow-clr);
   text-decoration: none;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   margin-left: 1rem;
   cursor: pointer;
 }
@@ -374,10 +382,10 @@ body {
 
 .worktogether__para {
   color: var(--light-clr);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
-.worktogether__btn {
+.worktogether__btn, .visitgithub__btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -394,6 +402,11 @@ body {
   position: absolute;
   top: -8rem;
   left: -8rem;
+}
+
+.visitgithub__btn {
+  display: block;
+  margin: 0 auto 3rem auto;
 }
 
 .footer {
@@ -490,12 +503,51 @@ body {
   }
   .worktogether {
     width: 100%;
-    padding: 8rem  0;
+    padding: 8rem 0;
     height: 40rem;
   }
   .worktogether__content {
     width: 90%;
   }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  margin: 0 auto;
+}
+
+.form__h2 {
+  color: var(--white-clr);
+}
+
+.form__p {
+  color: var(--white-clr);
+}
+
+.form__input, .form__msg {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.form__btn {
+  border: none;
+  width: 100%;
+}
+
+.form__btn:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 374px) {

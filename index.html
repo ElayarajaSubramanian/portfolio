@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    favico
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -20,6 +19,7 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js" defer></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio - Elayaraja Subramanian</title>
   </head>
@@ -33,14 +33,19 @@
                 <a href="#" class="nav__anchor active">Home</a>
               </li>
               <li class="nav__li">
-                <a href="#" class="nav__anchor">Portfolio</a>
+                <a href="#portfolio" class="nav__anchor">Portfolio</a>
               </li>
               <li class="nav__li">
-                <a href="#" class="nav__anchor">Contact</a>
+                <a href="#contact" class="nav__anchor">Contact</a>
               </li>
             </ul>
           </div>
-          <a href="#" class="header__btn">Contact me</a>
+          <a
+            href="assets/Elayaraja - Front-end Developer.pdf"
+            class="header__btn"
+            download="Elayaraja-Resume"
+            >Download CV</a
+          >
         </header>
         <div class="menubar"></div>
         <div class="intro">
@@ -54,7 +59,10 @@
                 >I'm Elayaraja <br />Subramanian</span
               >
             </h1>
-            <p class="intro__para">Front-end Developer | Team Lead |</p>
+            <p class="intro__para">
+              Front-end Developer | Team Lead | 11+ Years of experience in
+              Web/Graphic industry
+            </p>
             <a href="#" class="intro__btn">Contact me</a>
           </div>
           <img
@@ -67,35 +75,35 @@
     </div>
     <div class="main">
       <div class="container">
-        <div class="skillsection">
+        <!-- <div class="skillsection">
           <div class="designs">
             <div class="designs__product designs__box">
               <p><i class="far fa-gem designs__icon"></i></p>
-              <p class="designs__title">Product Design</p>
-              <p class="designs__txt">
-                The technological revolution is changing aspect
-              </p>
+              <p class="designs__title">Languages</p>
+              <p class="designs__txt">Javascript/Typescript</p>
+              <p class="designs__txt">Node.JS</p>
+              <p class="designs__txt">HTML5</p>
+              <p class="designs__txt">CSS3</p>
             </div>
             <div class="designs__logo designs__box">
               <p><i class="far fa-gem designs__icon"></i></p>
-              <p class="designs__title">Logo Design</p>
-              <p class="designs__txt">
-                The technological revolution is changing aspect
-              </p>
+              <p class="designs__title">Frameworks</p>
+              <p class="designs__txt">React</p>
+              <p class="designs__txt">Bootstrap</p>
+              <p class="designs__txt">Jquery</p>
             </div>
             <div class="designs__ui designs__box">
               <p><i class="far fa-gem designs__icon"></i></p>
-              <p class="designs__title">UI Design</p>
-              <p class="designs__txt">
-                The technological revolution is changing aspect
-              </p>
+              <p class="designs__title">Version Tool</p>
+              <p class="designs__txt">GIT</p>
+              <p class="designs__txt">Github</p>
             </div>
             <div class="designs__icondesign designs__box">
               <p><i class="far fa-gem designs__icon"></i></p>
-              <p class="designs__title">Icon Design</p>
-              <p class="designs__txt">
-                The technological revolution is changing aspect
-              </p>
+              <p class="designs__title">IDE</p>
+              <p class="designs__txt">Visual Studio</p>
+              <p class="designs__txt">Dreamweaver CS6</p>
+              <p class="designs__txt">Notepad++</p>
             </div>
           </div>
           <div class="hireme">
@@ -111,26 +119,26 @@
               excepturi exercitationem dicta omnis?
             </p>
           </div>
-        </div>
-        <div class="projects">
+        </div> -->
+        <div class="projects" id="portfolio">
           <div class="project">
             <div class="project__content">
               <div class="project__eyebrow">
                 <hr class="hr-line" />
                 <p class="project__txt">Project 1</p>
               </div>
-              <p class="project__title">Branding Easy Bank</p>
+              <p class="project__title">Easy Bank</p>
               <p class="project__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                mollitia cum assumenda vel eum, deserunt commodi sint illum
-                officiis doloremque possimus quos neque a vero perspiciatis,
-                excepturi exercitationem dicta omnis?
+                This is a pet project. I agree, this is not a great project to
+                brag about. Every project will teach something to the person who
+                is working on it, right?
               </p>
               <div>
                 <i class="fas fa-arrow-right readmore-icon"></i
                 ><a
                   href="https://easy-bank-three.vercel.app/"
                   class="project__anchor"
+                  target="blank"
                   >Visit Website</a
                 >
               </div>
@@ -158,61 +166,67 @@
                 <hr class="hr-line" />
                 <p class="project__txt">Project 2</p>
               </div>
-              <p class="project__title">Branding Easy Bank</p>
+              <p class="project__title">Shortly</p>
               <p class="project__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                mollitia cum assumenda vel eum, deserunt commodi sint illum
-                officiis doloremque possimus quos neque a vero perspiciatis,
-                excepturi exercitationem dicta omnis?
+                This is also a pet project. I used API integration on this
+                website to shorten the website. This project taught me few
+                things and it helped me to evolve as a developer.
               </p>
               <div>
                 <i class="fas fa-arrow-right readmore-icon"></i
                 ><a
                   href="https://shortly-theta.vercel.app/"
                   class="project__anchor"
+                  target="blank"
                   >Visit Website</a
                 >
               </div>
             </div>
           </div>
-          <div class="project">
-            <div class="project__content">
-              <div class="project__eyebrow">
-                <hr class="hr-line" />
-                <p class="project__txt">Project 1</p>
-              </div>
-              <p class="project__title">Branding Easy Bank</p>
-              <p class="project__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                mollitia cum assumenda vel eum, deserunt commodi sint illum
-                officiis doloremque possimus quos neque a vero perspiciatis,
-                excepturi exercitationem dicta omnis?
-              </p>
-              <div>
-                <i class="fas fa-arrow-right readmore-icon"></i
-                ><a href="#" class="project__anchor">Read more</a>
-              </div>
-            </div>
-            <div class="project__imgsection">
-              <img
-                src="assets/images/project1.PNG"
-                alt="project1"
-                class="project__img"
-              />
-              <div class="project__imgbg"></div>
-            </div>
-          </div>
+          <a
+            href="https://github.com/ElayarajaSubramanian?tab=repositories"
+            class="visitgithub__btn"
+            target="blank"
+            >Vist My Github</a
+          >
         </div>
-        <div class="worktogether">
+        <div class="worktogether" id="contact">
           <div class="worktogether__content">
             <h3 class="worktogether__title">Lets work together</h3>
             <p class="worktogether__para">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus nemo commodi porro voluptatem et aut adipisci harum
-              maxime, quaerat explicabo saepe dignissimos nulla quis iusto
-              ratione soluta omnis, ut hic.
+              Impressed with my work? Do you want to work together with me? Want
+              to hire me for your project?
             </p>
-            <a href="#" class="worktogether__btn">Contact me</a>
+            <p class="worktogether__para">Feel free to drop me an email.</p>
+            <form action="POST" data-netlify="true" class="form">
+              <input
+                type="text"
+                class="form__name form__input"
+                placeholder="Your Name"
+                name="name"
+              />
+              <input
+                type="email"
+                class="form__email form__input"
+                placeholder="Your Email"
+                name="email"
+              />
+              <input
+                type="tel"
+                class="form__phone form__input"
+                placeholder="Your Mobile No"
+                name="mobile"
+              />
+              <textarea
+                name="msg"
+                id="message"
+                cols="30"
+                rows="10"
+                class="form__msg"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="form__btn">Submit</button>
+            </form>
           </div>
           <svg height="280" width="280" class="green-circle2">
             <circle
@@ -243,12 +257,16 @@
       <div class="container footer__content">
         <p class="footer__copy">&copy; 2021. All rights reserved.</p>
         <div class="footer__socialicons">
-          <a href="#" class="footer__anchor"
+          <a
+            href="https://www.linkedin.com/in/elayaraja-subramanian-1b93b243/"
+            class="footer__anchor"
+            target="_blank"
             ><i class="fab fa-linkedin-in"></i
           ></a>
-          <a href="#" class="footer__anchor"><i class="fab fa-behance"></i></a>
-          <a href="#" class="footer__anchor"
-            ><i class="fab fa-instagram"></i
+          <a
+            href="https://github.com/ElayarajaSubramanian?tab=repositories"
+            class="footer__anchor"
+            ><i class="fab fa-github"></i
           ></a>
         </div>
       </div>
@@ -275,13 +293,5 @@
       />
       Sorry, your browser does not support inline SVG.
     </svg>
-    <script>
-      $(document).ready(function () {
-        $(".menubar").click(function () {
-          $(".header").toggleClass("active");
-          $(".menubar").toggleClass("active");
-        });
-      });
-    </script>
   </body>
 </html>
