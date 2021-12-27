@@ -125,7 +125,7 @@ html {
     &:hover {
       border-bottom: 2px solid var(--white-clr);
     }
-    &.active {
+    &:active {
       @extend .nav__anchor:hover;
     }
   }
@@ -369,6 +369,39 @@ html {
     justify-content: space-between;
   }
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  margin: 0 auto;
+  &__h2 {
+    color: var(--white-clr);
+  }
+  &__p {
+    color: var(--white-clr);
+  }
+  &__input {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 0;
+  }
+  &__msg {
+    @extend .form__input;
+  }
+  &__btn {
+    @extend .intro__btn;
+    border: none;
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     overflow-x: hidden;
@@ -383,7 +416,9 @@ html {
       font-size: 3rem;
     }
     &__profile {
-      display: none;
+      border-radius: 0;
+      margin: 2rem 0;
+      width: 100%;
     }
   }
   .skillsection {
@@ -393,6 +428,9 @@ html {
   }
   .green-circle {
     display: none;
+  }
+  .green-circle2 {
+    bottom: -12rem;
   }
   .yellow-circle {
     display: none;
@@ -429,44 +467,16 @@ html {
   .worktogether {
     width: 100%;
     padding: 8rem 0;
-    height: 40rem;
+    height: auto;
     &__content {
       width: 90%;
     }
   }
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: auto;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 0.7rem;
-  margin: 0 auto;
-  &__h2 {
-    color: var(--white-clr);
-  }
-  &__p {
-    color: var(--white-clr);
-  }
-  &__input {
-    padding: 0.6rem;
-    border-radius: 0.5rem;
-    border: 0;
-  }
-  &__msg {
-    @extend .form__input;
-  }
-  &__btn {
-    @extend .intro__btn;
-    border: none;
+  .form {
     width: 100%;
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
+
 @media (max-width: 374px) {
   .intro {
     &__h1 {
@@ -513,5 +523,33 @@ html {
       text-align: center;
       row-gap: 1rem;
     }
+  }
+}
+
+// Tablets
+@media (min-width: 768px) and (max-width: 1024px) {
+  .green-circle {
+    display: none;
+  }
+  .yellow-circle {
+    display: none;
+  }
+  .intro {
+    grid-template-columns: auto;
+    &__profile {
+      margin: 2rem auto;
+    }
+  }
+  .projects {
+    width: 100%;
+  }
+  .worktogether {
+    width: 100%;
+    &__content {
+      width: 80%;
+    }
+  }
+  .form {
+    width: 100%;
   }
 }
