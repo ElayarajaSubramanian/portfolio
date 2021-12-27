@@ -480,12 +480,16 @@ html {
 }
 
 @media (max-width: 767px) {
+  .dark-bg {
+    height: auto;
+  }
   .container {
     overflow-x: hidden;
   }
   .intro {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    padding-bottom: 1rem;
   }
   .intro__h1 {
     font-size: 2rem;

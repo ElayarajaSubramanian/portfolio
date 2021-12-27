@@ -403,11 +403,15 @@ html {
 }
 
 @media (max-width: 767px) {
+  .dark-bg {
+    height: auto;
+  }
   .container {
     overflow-x: hidden;
   }
   .intro {
     grid-template-columns: 100%;
+    padding-bottom: 1rem;
     &__h1 {
       font-size: 2rem;
       line-height: 4rem;
