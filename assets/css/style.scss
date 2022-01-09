@@ -256,11 +256,11 @@ html {
   width: 80%;
   margin: 0 auto;
 }
-.show-grid {
+/* .show-grid {
   display: grid !important;
-}
+} */
 .project {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
   align-items: center;
