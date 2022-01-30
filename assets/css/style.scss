@@ -125,7 +125,7 @@ html {
     &:hover {
       border-bottom: 2px solid var(--white-clr);
     }
-    &:active {
+    &.active {
       @extend .nav__anchor:hover;
     }
   }
@@ -255,6 +255,7 @@ html {
 .projects {
   width: 80%;
   margin: 0 auto;
+  content-visibility: auto;
 }
 /* .show-grid {
   display: grid !important;
@@ -404,7 +405,22 @@ html {
     }
   }
 }
-
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  &__arrow {
+    font-size: 2.5rem;
+    color: var(--darkyellow-clr);
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      display: block;
+    }
+  }
+}
 @media (max-width: 767px) {
   .dark-bg {
     height: auto;
@@ -469,6 +485,9 @@ html {
     &__imgsection {
       width: 92%;
       margin: 0 auto;
+    }
+    &__even {
+      grid-area: 1/1/1/1;
     }
   }
   .worktogether {

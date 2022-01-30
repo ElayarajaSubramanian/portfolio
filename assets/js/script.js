@@ -28,3 +28,18 @@ const observer = new IntersectionObserver(
 projects.forEach((project) => {
   observer.observe(project);
 });
+
+//Scroll to top
+const scrollBtn = document.querySelector(".scrolltop");
+const scrollVisible = document.querySelector(".scrolltop__arrow");
+
+const scrollBtnDisplay = function () {
+  window.scrollY > window.innerHeight
+    ? scrollVisible.classList.add("active")
+    : scrollVisible.classList.remove("active");
+};
+window.addEventListener("scroll", scrollBtnDisplay);
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
